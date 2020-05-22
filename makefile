@@ -1,16 +1,16 @@
 all: sort search generate linkLibrary testAPP linkLibraryTest
 
 sort:
-	cl /c sort.c
+	cl /c sourceFiles/sort.c
 	
 search:
-	cl /c search.c
+	cl /c sourceFiles/search.c
 
 generate:
-	cl /c generate.c
+	cl /c sourceFiles/generate.c
 
 testApp:
-	cl /c arrayTestApp.c
+	cl /c sourceFiles/arrayTestApp.c
 	
 linkLibrary:
 	lib /OUT:array.lib sort.obj search.obj generate.obj
